@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  @apply border-borderGlass;
+}
+
+body {
+  @apply bg-background font-body text-foreground antialiased;
+  margin: 0;
+  min-height: 100vh;
+}
+
+section {
+  @apply relative;
+}
+
+.liquid-orb {
+  filter: blur(10px);
+  mix-blend-mode: screen;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-white via-cyan-100 to-purple-200 bg-clip-text text-transparent;
+}
